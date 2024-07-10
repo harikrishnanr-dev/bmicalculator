@@ -48,14 +48,14 @@ function calculate(){
                         <details class="align-items-center mb-2">
                             <summary>Details</summary>
                                 <div class="justify-content-center align-items-left">
-                                    This BMI chart shows your BMI result of ${bmi} as a cross in the ${category} area.
+                                    This BMI chart shows your BMI result of <span class="fw-bold">${bmi}</span> as a cross in the <span class="fw-bold">${category}</span> area.
                                     </div>
-                                    <div class="fw-semibold mt-2">The chart is a horizontal bar divided into 4 areas.</div>
-                                    <ul class="fw-medium m-2">
-                                        <li>Underweight: A BMI of 18.4 and below is classed as underweight.</li>
-                                        <li>Healthy: A BMI of 18.5 to 22.9 is classed as a healthy weight.</li>
-                                        <li>Overweight: A BMI of 23 to 27.4 is classed as overweight.</li>
-                                        <li>Obese: A BMI of 27.5 or more is classed as obese.</li>
+                                    <p class="mt-2"><small>The chart is a horizontal bar divided into 4 areas.</small><p>
+                                    <ul class="fw-light m-2">
+                                        <li><span class="fw-semibold">Underweight:</span> A BMI of 18.4 and below is classed as underweight.</li>
+                                        <li><span class="fw-semibold">Healthy:</span> A BMI of 18.5 to 22.9 is classed as a healthy weight.</li>
+                                        <li><span class="fw-semibold">Overweight:</span> A BMI of 23 to 27.4 is classed as overweight.</li>
+                                        <li><span class="fw-semibold">Obese:</span> A BMI of 27.5 or more is classed as obese.</li>
                                     </ul>
                         </details>
                         <div class="input-field">
