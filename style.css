@@ -96,7 +96,7 @@
 }
 
 .calbutton:hover{
-background: rgba(25, 102, 184, 0.9);
+background: rgba(46, 132, 17, 0.9);
 color:#fff;
 }
 .resetbutton{
@@ -114,7 +114,7 @@ color:#fff;
 
 @media only screen and (max-width: 768px){
     .side-image{
-        background-size: contain;
+        background-size: cover;
         border-radius: 10px 10px 0 0;
         height: 300px; 
     }
@@ -130,8 +130,8 @@ color:#fff;
         max-width: 420px;
         width: 100%;
         height:100%;
-        overflow: hidden; /* Ensure content doesn't overflow */
-        transition: height 0.3s ease; /* Optional smooth height transition */
+        overflow: hidden; 
+        transition: height 0.3s ease; 
     }
      details {
         display: none;
