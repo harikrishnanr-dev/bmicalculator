@@ -36,34 +36,41 @@ function calculate(){
     }
         
         document.getElementById("card").innerHTML=`
-        <div class="row">
-            <div class="col-md-6 side-image" style="background-image: url('${bgImage}');"></div>
-            <div class="col-md-6 right">
-                <div class="input-box">
+<div class="container">
+            <div class="row d-flex">
+                <div class="col-md-6 d-flex align-items-stretch" style="padding: 5px; box-sizing: border-box;">
+                    <div class="side-image" style="background-image: url('${bgImage}'); background-size: cover; width: 100%;"></div>
+                </div>
+                <div class="col-md-6 right d-flex flex-column justify-content-center" style="padding: 5px; box-sizing: border-box;">
+                    <div class="input-box">
                         <h4 class="text-center">BMI Calculator</h4>
                         <h5 class="input-box text-center ${bgColor}">${category}</h5>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item text-center"> Your BMI IS <span class="fw-bold">${bmi}</span></li>
+                            <li class="list-group-item text-center">Your BMI IS <span class="fw-bold">${bmi}</span></li>
                         </ul>
-                        <details class="align-items-center mb-2">
+                        <details class="align-items-center mb-2" onclick="toggleRowHeight(this)">
                             <summary>Details</summary>
-                                <div class="justify-content-center align-items-left">
-                                    This BMI chart shows your BMI result of <span class="fw-bold">${bmi}</span> as a cross in the <span class="fw-bold">${category}</span> area.
-                                    </div>
-                                    <p class="mt-2"><small>The chart is a horizontal bar divided into 4 areas.</small><p>
-                                    <ul class="fw-light m-2">
-                                        <li><span class="fw-semibold">Underweight:</span> A BMI of 18.4 and below is classed as underweight.</li>
-                                        <li><span class="fw-semibold">Healthy:</span> A BMI of 18.5 to 22.9 is classed as a healthy weight.</li>
-                                        <li><span class="fw-semibold">Overweight:</span> A BMI of 23 to 27.4 is classed as overweight.</li>
-                                        <li><span class="fw-semibold">Obese:</span> A BMI of 27.5 or more is classed as obese.</li>
-                                    </ul>
+                            <div class="justify-content-center align-items-left">
+                                This BMI chart shows your BMI result of <span class="fw-bold">${bmi}</span> as a cross in the <span class="fw-bold">${category}</span> area.
+                            </div>
+                            <p class="mt-2"><small>The chart is a horizontal bar divided into 4 areas.</small></p>
+                            <ul class="fw-light m-2">
+                                <li><span class="fw-semibold">Underweight:</span> A BMI of 18.4 and below is classed as underweight.</li>
+                                <li><span class="fw-semibold">Healthy:</span> A BMI of 18.5 to 22.9 is classed as a healthy weight.</li>
+                                <li><span class="fw-semibold">Overweight:</span> A BMI of 23 to 27.4 is classed as overweight.</li>
+                                <li><span class="fw-semibold">Obese:</span> A BMI of 27.5 or more is classed as obese.</li>
+                            </ul>
                         </details>
                         <div class="input-field">
-                            <button type="button" class="resetbutton mt-3" onclick="reset()">Reset</button>
+                            <button type="button" class="resetbutton" onclick="reset()">Reset</button>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
+</div>
+
+
         `   
 }
 function reset(){
