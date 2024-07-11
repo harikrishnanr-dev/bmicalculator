@@ -36,8 +36,7 @@ function calculate(){
     }
         
         document.getElementById("card").innerHTML=`
-<div class="container">
-            <div class="row d-flex">
+
                 <div class="col-md-6 d-flex align-items-stretch" style="padding: 5px; box-sizing: border-box;">
                     <div class="side-image" style="background-image: url('${bgImage}'); background-size: cover; width: 100%;"></div>
                 </div>
@@ -67,8 +66,7 @@ function calculate(){
                     </div>
                 </div>
             </div>
-        </div>
-</div>
+
 
 
         `   
